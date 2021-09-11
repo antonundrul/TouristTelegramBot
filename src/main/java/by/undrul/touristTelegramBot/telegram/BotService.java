@@ -1,5 +1,7 @@
-package by.undrul.touristTelegramBot;
+package by.undrul.touristTelegramBot.telegram;
 
+import by.undrul.touristTelegramBot.answers.AnswersFile;
+import by.undrul.touristTelegramBot.service.CityService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +12,17 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 @Service
 public class BotService {
-    public static final Logger logger = LogManager.getLogger();
+    private static final Logger logger = LogManager.getLogger();
 
     @Autowired
     private Bot bot;
 
+    @Autowired
+    CityService cityService;
 
     public void sendMessage(Message message, String text) {
         try {
+            logger.info("BotService: sendMessage():   "+text);
             SendMessage sendMessage = new SendMessage();
             sendMessage.setChatId(message.getChatId().toString());
             sendMessage.setText(getAnswer(text));
@@ -28,6 +33,7 @@ public class BotService {
     }
 
     public String getAnswer(String text) {
-        return (text.equals("/start")) ? AnswersFile.START_INFO : text;
+        logger.info("BotService: getAnswer():   "+text);
+        return (text.equals("/start")) ? AnswersFile.START_INFORMATION : cityService.getAnswer(text);
     }
 }

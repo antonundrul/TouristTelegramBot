@@ -1,4 +1,4 @@
-package by.undrul.touristTelegramBot;
+package by.undrul.touristTelegramBot.telegram;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
