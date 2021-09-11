@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 @Repository
-public interface CityRepository extends CrudRepository<City, Long> {
+public interface CityRepository extends CrudRepository<City, Integer> {
     City getCityByName(String name);
+    City getCityById(Integer id);
 }

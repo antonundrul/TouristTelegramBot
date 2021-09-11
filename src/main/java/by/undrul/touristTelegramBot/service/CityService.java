@@ -26,4 +26,16 @@ public class CityService {
         String answer = cityRepository.getCityByName(name).getDescription();
         return (answer != null) ? answer : AnswersFile.NO_INFORMATION;
     }
+
+    public City get(Integer id){
+       return cityRepository.getCityById(id);
+    }
+
+    public void save(City city){
+        cityRepository.save(city);
+    }
+
+    public void delete(Integer id){
+        cityRepository.deleteById(id);
+    }
 }

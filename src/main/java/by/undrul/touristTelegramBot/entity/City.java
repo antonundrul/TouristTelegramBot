@@ -14,9 +14,13 @@ import java.io.Serializable;
 public class City implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @Column(name = "city_id")
+    private Integer id;
 
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "description")
     private String description;
 
     public City(String name, String description) {
