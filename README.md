@@ -23,5 +23,7 @@
 
 Для получения информации о всех городах выберем тип метода **GET** и введем url
 
->http://localhost:8080/cities
+> http://localhost:8080/cities/
+>![image](https://user-images.githubusercontent.com/63640670/132994650-37a26143-72f2-4f5d-be78-9da05bd2ed4f.png)
+
 
