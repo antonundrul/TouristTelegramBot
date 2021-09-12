@@ -53,6 +53,6 @@
 
 ![image](https://user-images.githubusercontent.com/63640670/132995492-a744ca1e-de97-48f3-8109-420e27a11ef1.png)
 
-Теперь под номерои 13 у нас уже не Токио, а Пекин
+Теперь под номером 13 у нас уже не Токио, а Пекин
 
 ![image](https://user-images.githubusercontent.com/63640670/132995540-39b5b2b7-291f-4fe8-876a-c76dc39f0706.png)
