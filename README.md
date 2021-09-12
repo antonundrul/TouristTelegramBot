@@ -23,9 +23,24 @@
 
 Для получения информации о всех городах выберем тип метода **GET** и введем url
 
-![image](https://user-images.githubusercontent.com/63640670/132994650-37a26143-72f2-4f5d-be78-9da05bd2ed4f.png)
+![image](https://user-images.githubusercontent.com/63640670/132994768-3ec651bb-3345-48b9-a2c6-8ac38aeaec9b.png)
 
 Далее нажав кнопку **SEND** мы получим список городов и их описаний
 
 ![image](https://user-images.githubusercontent.com/63640670/132994722-0d4bbda7-0c44-49e3-828e-6f38e619fa38.png)
 
+Чтобы посмотреть информацию об отдельном городе, в url необходимо добавить его id
+
+![image](https://user-images.githubusercontent.com/63640670/132994780-73440242-da1e-4276-87a1-5303c31976fc.png)
+
+Полученный ответ 
+
+![image](https://user-images.githubusercontent.com/63640670/132994788-30e96eea-caf9-439b-a0b9-0baef61cc845.png)
+
+Для добавления города выберем метод **POST** и введем информацию о городе
+
+![image](https://user-images.githubusercontent.com/63640670/132994910-7384a1ce-dc39-4f77-b4e0-7f83f0aed085.png)
+
+Для удаления города нужно выбрать метод **DELETE** и добавить в url id того города, который необходимо удалить
+
+![image](https://user-images.githubusercontent.com/63640670/132995008-efae071d-e751-4620-876d-c436e260f0a7.png)
